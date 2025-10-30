@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Termz Package Mirror</title>
+</head>
+<body>
+  <h1>Termz Package Mirror</h1>
+  <ul id="list"></ul>
+
+  <script>
+    // Ganti URL ini ke repo GitHub lo
+    const repo = "ZiliKeren/termz-mirror"; // contoh
+    const path = "packages";
+
+    fetch(`https://api.github.com/repos/${repo}/contents/${path}`)
+      .then(res => res.json())
+      .then(files => {
+        const ul = document.getElementById("list");
+        files.forEach(file => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = `https://termz-tinkrow-mirror.pages.dev/${path}/${file.name}`;
+          a.textContent = file.name;
+          li.appendChild(a);
+          ul.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>
