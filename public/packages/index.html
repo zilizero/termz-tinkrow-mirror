@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termz Packages</title>
+  <style>
+    body { font-family: monospace; background: #0d1117; color: #c9d1d9; padding: 20px; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h2>📦 Termz Package Mirror</h2>
+  <p>List of available packages:</p>
+  <ul id="file-list"></ul>
+
+  <script>
+    async function listFiles() {
+      // Ambil list file dari GitHub raw content (karena vercel gak bisa list folder otomatis)
+      const repo = "zilizero/termz-tinkrow-mirror";
+      const path = "public/packages";
+      const apiUrl = `https://api.github.com/repos/${repo}/contents/${path}`;
+
+      const res = await fetch(apiUrl);
+      const data = await res.json();
+
+      const list = document.getElementById("file-list");
+      data
+        .filter(f => f.name.endsWith(".json"))
+        .forEach(file => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="${file.name}" target="_blank">${file.name}</a>`;
+          list.appendChild(li);
+        });
+    }
+
+    listFiles();
+  </script>
+</body>
+</html>
