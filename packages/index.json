@@ -1,4 +1,9 @@
 {
-    "hello": "https://termz-tinkrow-mirror.pages.dev/packages/hello.json",
-    "sysinfo": "https://termz-tinkrow-mirror.pages.dev/packages/sysinfo.json"
+  "hello": "https://termz.tinkrow.space/packages/hello.json",
+  "sysinfo": "https://termz.tinkrow.space/packages/sysinfo.json",
+  "cowsay-lite": "https://termz.tinkrow.space/packages/cowsay-lite.json",
+  "hostinfo": "https://termz.tinkrow.space/packages/hostinfo.json",
+  "art": "https://termz.tinkrow.space/packages/art.json",
+  "quote": "https://termz.tinkrow.space/packages/quote.json",
+  "fakeping": "https://termz.tinkrow.space/packages/fakeping.json"
 }
