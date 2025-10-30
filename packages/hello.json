@@ -1,0 +1,11 @@
+{
+    "name": "hello",
+    "desc": "Contoh paket dengan subcommand",
+    "version": "1.0.2",
+    "author": "Muhammad Zili",
+    "commands": {
+        "default": "print('Usage: trm run hello [greet|wave]\nIni adalah paket hello dengan subcommand.')",
+        "greet": "print('Halo! 👋 Selamat datang di Termz!')",
+        "wave": "print('Dadah! 👋 Sampai jumpa lagi!')"
+    }
+}
