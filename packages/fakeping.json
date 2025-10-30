@@ -1,0 +1,11 @@
+{
+    "name": "fakeping",
+    "version": "1.0.0",
+    "desc": "Simulasi ping ke host.",
+    "author": "Termz",
+    "commands": {
+        "default": "print('Gunakan: fakeping [google|localhost]')",
+        "google": "import time\nprint('Pinging google.com [8.8.8.8] with 32 bytes of data:')\ntime.sleep(0.5)\nprint('Reply from 8.8.8.8: bytes=32 time=10ms TTL=118')\ntime.sleep(0.5)\nprint('Reply from 8.8.8.8: bytes=32 time=11ms TTL=118')\ntime.sleep(0.5)\nprint('Reply from 8.8.8.8: bytes=32 time=12ms TTL=118')\nprint('\\nPing statistics for 8.8.8.8: Packets: Sent = 3, Received = 3, Lost = 0 (0% loss)')",
+        "localhost": "import time\nprint('Pinging localhost [127.0.0.1] with 32 bytes of data:')\ntime.sleep(0.1)\nprint('Reply from 127.0.0.1: bytes=32 time<1ms TTL=64')\ntime.sleep(0.1)\nprint('Reply from 127.0.0.1: bytes=32 time<1ms TTL=64')\ntime.sleep(0.1)\nprint('Reply from 127.0.0.1: bytes=32 time<1ms TTL=64')\nprint('\\nPing statistics for 127.0.0.1: Packets: Sent = 3, Received = 3, Lost = 0 (0% loss)')"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "quote",
+    "version": "1.0.0",
+    "desc": "Kutipan motivasi acak.",
+    "author": "Termz",
+    "commands": {
+        "default": "import random\nquotes = [\n    'Satu-satunya cara untuk melakukan pekerjaan hebat adalah dengan mencintai apa yang Anda lakukan. - Steve Jobs',\n    'Kesempatan tidak terjadi, Anda yang menciptakannya. - Chris Grosser',\n    'Jangan khawatir tentang kegagalan, khawatirlah tentang peluang yang Anda lewatkan saat Anda bahkan tidak mencoba. - Jack Canfield'\n]\nprint(f'\\nKutipan hari ini:\\n{random.choice(quotes)}')"
+    }
+}

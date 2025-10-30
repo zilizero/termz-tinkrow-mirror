@@ -1,0 +1,11 @@
+{
+    "name": "art",
+    "version": "1.0.0",
+    "desc": "Menampilkan seni ASCII.",
+    "author": "Termz",
+    "commands": {
+        "default": "print('Gunakan: art [roket|kucing]')",
+        "roket": "print('      /\\\\')\nprint('     /  \\\\')\nprint('    /    \\\\')\nprint('   |      |')\nprint('   |  TRMZ  |')\nprint('   |      |')\nprint('  /|------|\\\\')\nprint(' / |      | \\\\')\nprint('/  |______|  \\\\')\nprint('   |      |')\nprint('   |______|')",
+        "kucing": "print('  /\\\\_/\\\\')\nprint(' ( o.o )')\nprint('  > ^ <')"
+    }
+}

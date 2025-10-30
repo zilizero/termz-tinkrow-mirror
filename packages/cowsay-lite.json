@@ -1,0 +1,9 @@
+{
+    "name": "cowsay-lite",
+    "version": "1.0.0",
+    "desc": "Seekor sapi mengatakan sesuatu.",
+    "author": "Termz",
+    "commands": {
+        "default": "print(' \\\\\\\\   ^__^')\nprint('  \\\\\\\\  (oo)\\\\\\\\_______')\nprint('     (__)\\\\\\\\       )\\\\\\\\/\\\\\\\\')\nprint('         ||----w |')\nprint('         ||     ||')\nprint('\\nMooooo! (Gunakan: cowsay-lite)')"
+    }
+}

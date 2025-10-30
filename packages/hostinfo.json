@@ -1,0 +1,9 @@
+{
+    "name": "hostinfo",
+    "version": "1.0.0",
+    "desc": "Info host dan user.",
+    "author": "Termz",
+    "commands": {
+        "default": "import platform, os\ntry:\n    user = os.getlogin()\nexcept Exception:\n    user = 'Unknown'\nprint(f'--- Info Host & User ---')\nprint(f'Hostname     : {platform.node()}')\nprint(f'OS           : {platform.system()} {platform.release()}')\nprint(f'User         : {user}')"
+    }
+}
