@@ -1,0 +1,11 @@
+{
+    "name": "nigga",
+    "desc": "Nigga",
+    "version": "1.0.0",
+    "author": "NIGGERSBLACKS",
+    "commands": {
+        "taiwan": "print('Taiwan is a country!!!.')",
+        "donald": "print('DONALD TRUMP IS A NIGGA')",
+        "supernigga": "print('NIGGA')"
+    }
+}
