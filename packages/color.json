@@ -1,0 +1,9 @@
+{
+    "name": "color",
+    "version": "1.0.0",
+    "desc": "Menampilkan demo warna ANSI.",
+    "author": "Termz",
+    "commands": {
+        "default": "print(\"Demo Warna ANSI:\")\\ncolors = [('Merah', '31'), ('Hijau', '32'), ('Kuning', '33'), ('Biru', '34'), ('Magenta', '35'), ('Cyan', '36'), ('Putih', '37')]\\nfor name, code in colors:\\n    print(f\"\\\\033[{code}mIni teks {name}\\\\033[0m\")"
+    }
+}

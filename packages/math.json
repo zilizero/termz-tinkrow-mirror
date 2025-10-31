@@ -1,0 +1,11 @@
+{
+    "name": "math",
+    "version": "1.0.0",
+    "desc": "Kalkulator simpel.",
+    "author": "Termz",
+    "commands": {
+        "default": "print(\"Gunakan: math [add|sub]\")",
+        "add": "try:\\n    a = float(input(\"Angka 1: \"))\\n    b = float(input(\"Angka 2: \"))\\n    print(f\"Hasil: {a + b}\")\\nexcept ValueError:\\n    print(\"Error: Masukkan angka yang valid.\")",
+        "sub": "try:\\n    a = float(input(\"Angka 1: \"))\\n    b = float(input(\"Angka 2: \"))\\n    print(f\"Hasil: {a - b}\")\\nexcept ValueError:\\n    print(\"Error: Masukkan angka yang valid.\")"
+    }
+}

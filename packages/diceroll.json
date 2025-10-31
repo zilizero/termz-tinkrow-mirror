@@ -1,0 +1,10 @@
+{
+  "name": "diceroll",
+  "version": "1.0.0",
+  "desc": "Mengocok dadu (1-6).",
+  "author": "Termz",
+  "commands": {
+    "default": "import random, time\\nprint(\"Mengocok dadu...\")\\ntime.sleep(0.5)\\nprint(f\"Hasil: {random.randint(1, 6)}\")",
+    "d20": "import random, time\\nprint(\"Mengocok dadu D20...\")\\ntime.sleep(0.5)\\nprint(f\"Hasil: {random.randint(1, 20)}\")"
+  }
+}

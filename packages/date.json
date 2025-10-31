@@ -1,0 +1,10 @@
+{
+    "name": "date",
+    "version": "1.0.0",
+    "desc": "Menampilkan tanggal dan waktu saat ini.",
+    "author": "Termz",
+    "commands": {
+        "default": "import datetime\\nnow = datetime.datetime.now()\\nprint(f\"Tanggal: {now.strftime('%Y-%m-%d')}\")\\nprint(f\"Waktu  : {now.strftime('%H:%M:%S')}\")",
+        "utc": "import datetime\\nnow = datetime.datetime.utcnow()\\nprint(f\"Tanggal (UTC): {now.strftime('%Y-%m-%d')}\")\\nprint(f\"Waktu   (UTC): {now.strftime('%H:%M:%S')}\")"
+    }
+}

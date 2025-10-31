@@ -1,0 +1,9 @@
+{
+    "name": "weather",
+    "version": "1.0.0",
+    "desc": "Menampilkan laporan cuaca (palsu).",
+    "author": "Termz",
+    "commands": {
+        "default": "import random\\nlokasi = ['Jakarta', 'Bekasi', 'Bandung', 'Surabaya', 'Mars']\\ncuaca = ['Cerah Berawan', 'Hujan Badai', 'Berangin', 'Meteor Ganas', 'Cerah Banget']\\ntemp = random.randint(25, 40)\\nprint(f\"Cuaca untuk {random.choice(lokasi)}:\")\\nprint(f\"  Kondisi: {random.choice(cuaca)}\")\\nprint(f\"  Suhu   : {temp} C\")"
+    }
+}

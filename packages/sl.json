@@ -1,0 +1,9 @@
+{
+    "name": "sl",
+    "version": "1.0.0",
+    "desc": "Steam Locomotive (buat yang salah ketik 'ls').",
+    "author": "Termz",
+    "commands": {
+        "default": "print('        choo choo!\\n        ')\\nprint('            .-.\\n        ')\\nprint('       ==  (O O)\\n     ')\\nprint('         |  |  |')\\nprint('       __|  |  |__')\\nprint('     / |  |  |  | \\\\')\\nprint('    /  |  |  |  |  \\\\')\\nprint('   |   |  |  |  |   |')\\nprint('   |   |  |  |  |   |')\\nprint('   |   |__|__|__|   |')\\nprint('   |   |        |   |')\\nprint('   |   |        |   |')\\nprint('   |___|________|___|')\\nprint('  /|                |\\\\')\\nprint(' / |                | \\\\')\\nprint('/  |____(____)____|  \\\\')\\nprint('|   |    |    |   |   |')\\nprint('|   |    |    |   |   |')\\nprint('|   |____|____|   |   |')\\nprint('|   ( \\\\ )    ( / )   |')\\nprint(' \\---( o )----( o )---/')\\nprint('      | |      | |')\\nprint('      | |      | |')\\nprint('      (o)      (o)')"
+    }
+}

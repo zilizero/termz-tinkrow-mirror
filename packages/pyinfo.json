@@ -1,0 +1,9 @@
+{
+    "name": "pyinfo",
+    "version": "1.0.0",
+    "desc": "Menampilkan info versi Python.",
+    "author": "Termz",
+    "commands": {
+        "default": "import sys\\nprint(f\"Versi Python: {sys.version.split(' ')[0]}\")\\nprint(f\"Path: {sys.executable}\")"
+    }
+}

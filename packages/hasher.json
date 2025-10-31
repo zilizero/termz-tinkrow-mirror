@@ -1,0 +1,11 @@
+{
+    "name": "hasher",
+    "version": "1.0.0",
+    "desc": "Hash sebuah string (MD5, SHA256).",
+    "author": "Termz",
+    "commands": {
+        "default": "print(\"Gunakan: hasher [md5|sha256]\")",
+        "md5": "import hashlib\\ntxt = input(\"Teks: \")\\nprint(f\"MD5: {hashlib.md5(txt.encode()).hexdigest()}\")",
+        "sha256": "import hashlib\\ntxt = input(\"Teks: \")\\nprint(f\"SHA256: {hashlib.sha256(txt.encode()).hexdigest()}\")"
+    }
+}

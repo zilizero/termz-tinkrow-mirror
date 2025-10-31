@@ -1,0 +1,9 @@
+{
+    "name": "uuid",
+    "version": "1.0.0",
+    "desc": "Membuat UUID (Universal Unique Identifier).",
+    "author": "Termz",
+    "commands": {
+        "default": "import uuid\\nprint(f\"UUID v4: {uuid.uuid4()}\")"
+    }
+}

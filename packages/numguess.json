@@ -1,0 +1,9 @@
+{
+    "name": "numguess",
+    "version": "1.0.0",
+    "desc": "Game Tebak Angka (1-100).",
+    "author": "Termz",
+    "commands": {
+        "default": "import random\\nangka_rahasia = random.randint(1, 100)\\ntebakan = 0\\njumlah_tebakan = 0\\nprint(\"Game Tebak Angka (1-100). Ketik 'exit' untuk keluar.\")\\nwhile tebakan != angka_rahasia:\\n    try:\\n        pil = input(\"Tebakanmu: \")\\n        if pil == 'exit':\\n            print(f\"Angkanya adalah {angka_rahasia}\")\\n            break\\n        tebakan = int(pil)\\n        jumlah_tebakan += 1\\n        if tebakan < angka_rahasia:\\n            print(\"Terlalu kecil!\")\\n        elif tebakan > angka_rahasia:\\n            print(\"Terlalu besar!\")\\n        else:\\n            print(f\"Selamat! Kamu benar! Angkanya adalah {angka_rahasia}\")\\n            print(f\"Jumlah tebakan: {jumlah_tebakan}\")\\n    except ValueError:\\n        print(\"Masukkan angka yang valid.\")"
+    }
+}

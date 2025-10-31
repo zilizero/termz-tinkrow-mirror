@@ -1,0 +1,11 @@
+{
+    "name": "base64",
+    "version": "1.0.0",
+    "desc": "Encode/Decode teks ke Base64.",
+    "author": "Termz",
+    "commands": {
+        "default": "print(\"Gunakan: base64 [en|de]\")\\nprint(\"  en: Encode ke Base64\")\\nprint(\"  de: Decode dari Base64\")",
+        "en": "import base64\\ntry:\\n    text = input(\"Teks untuk di-encode: \")\\n    encoded = base64.b64encode(text.encode('utf-8')).decode('utf-8')\\n    print(f\"Hasil: {encoded}\")\\nexcept Exception as e:\\n    print(f\"Error: {e}\")",
+        "de": "import base64\\ntry:\\n    text = input(\"Teks untuk di-decode: \")\\n    decoded = base64.b64decode(text.encode('utf-8')).decode('utf-8')\\n    print(f\"Hasil: {decoded}\")\\nexcept Exception as e:\\n    print(f\"Error: {e}\")"
+    }
+}

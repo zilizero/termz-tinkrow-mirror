@@ -1,0 +1,9 @@
+{
+    "name": "fib",
+    "version": "1.0.0",
+    "desc": "Menghitung deret Fibonacci.",
+    "author": "Termz",
+    "commands": {
+        "default": "try:\\n    n = int(input(\"Masukkan jumlah deret (n): \"))\\n    if n <= 0:\\n        print(\"Masukkan angka positif.\")\\n    else:\\n        a, b = 0, 1\\n        result = []\\n        for _ in range(n):\\n            result.append(str(a))\\n            a, b = b, a + b\\n        print(f\"Deret Fibonacci ({n}): {', '.join(result)}\")\\nexcept ValueError:\\n    print(\"Masukkan angka yang valid.\")"
+    }
+}

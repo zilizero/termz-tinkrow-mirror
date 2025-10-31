@@ -1,0 +1,9 @@
+{
+    "name": "epoch",
+    "version": "1.0.0",
+    "desc": "Menampilkan timestamp Unix saat ini.",
+    "author": "Termz",
+    "commands": {
+        "default": "import time\\nprint(f\"Timestamp Epoch: {int(time.time())}\")"
+    }
+}

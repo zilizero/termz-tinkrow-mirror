@@ -1,0 +1,9 @@
+{
+    "name": "rps",
+    "version": "1.0.0",
+    "desc": "Game Gunting-Batu-Kertas.",
+    "author": "Termz",
+    "commands": {
+        "default": "import random\\noptions = ['gunting', 'batu', 'kertas']\\nkom = random.choice(options)\\npil = input(\"Pilihanmu (gunting/batu/kertas): \").lower()\\nprint(f\"Komputer memilih: {kom}\")\\nif pil == kom:\\n    print(\"Hasil: Seri!\")\\nelif (pil == 'batu' and kom == 'gunting') or (pil == 'gunting' and kom == 'kertas') or (pil == 'kertas' and kom == 'batu'):\\n    print(\"Hasil: Kamu Menang!\")\\nelif pil in options:\\n    print(\"Hasil: Kamu Kalah!\")\\nelse:\\n    print(\"Pilihan tidak valid.\")"
+    }
+}

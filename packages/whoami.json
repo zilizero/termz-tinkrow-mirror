@@ -1,0 +1,9 @@
+{
+    "name": "whoami",
+    "version": "1.0.0",
+    "desc": "Menampilkan nama user.",
+    "author": "Termz",
+    "commands": {
+        "default": "print(\"termz-user\")"
+    }
+}

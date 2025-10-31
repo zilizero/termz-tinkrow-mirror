@@ -1,0 +1,9 @@
+{
+    "name": "url-parser",
+    "version": "1.0.0",
+    "desc": "Mem-parsing komponen dari URL.",
+    "author": "Termz",
+    "commands": {
+        "default": "from urllib.parse import urlparse\\ntry:\\n    url = input(\"Masukkan URL: \")\\n    if not url.startswith('http'):\\n        url = 'http://' + url\\n    parsed = urlparse(url)\\n    print(f\"Scheme  : {parsed.scheme}\")\\n    print(f\"Netloc  : {parsed.netloc}\")\\n    print(f\"Path    : {parsed.path}\")\\n    print(f\"Params  : {parsed.params}\")\\n    print(f\"Query   : {parsed.query}\")\\nexcept Exception as e:\\n    print(f\"Error: {e}\")"
+    }
+}

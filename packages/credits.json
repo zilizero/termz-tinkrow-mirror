@@ -1,0 +1,9 @@
+{
+    "name": "credits",
+    "version": "1.0.0",
+    "desc": "Menampilkan info pembuat Termz.",
+    "author": "Termz",
+    "commands": {
+        "default": "print(\"\\\\n--- Termz Credits ---\\\\n\")\\nprint(\"Dibuat oleh: Muhammad Zili\")\\nprint(\"Spesial buat kamu yang lagi pake ini.\")\\nprint(\"\\\\nTerima kasih sudah mencoba! 🚀\")"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "cal",
+    "version": "1.0.0",
+    "desc": "Menampilkan kalender bulan ini.",
+    "author": "Termz",
+    "commands": {
+        "default": "import calendar, datetime\\ntoday = datetime.date.today()\\ncal = calendar.month(today.year, today.month)\\nprint(f\"Kalender untuk {today.strftime('%B %Y')}:\")\\nprint(cal)"
+    }
+}
