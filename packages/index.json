@@ -38,5 +38,15 @@
   "tail": "tail.json",
   "todo": "todo.json",
   "tree": "tree.json",
-  "wordcount": "wordcount.json"
+  "wordcount": "wordcount.json",
+  "8ball": "8ball.json",
+  "ip": "ip.json",
+  "matrix": "matrix.json",
+  "qr": "qr.json",
+  "slug": "slug.json",
+  "reverse": "reverse.json",
+  "stat": "stat.json",
+  "dict": "dict.json",
+  "portscan": "portscan.json",
+  "hangman": "hangman.json"
 }
