@@ -26,6 +26,17 @@
   "fib": "fib.json",
   "credits": "credits.json",
   "url-parser": "url-parser.json",
-  "nigga": "nigga.json"
+  "nigga": "nigga.json",
+  "calc": "calc.json",
+  "clock": "clock.json",
+  "find": "find.json",
+  "grep": "grep.json",
+  "head": "head.json",
+  "http": "http.json",
+  "joke": "joke.json",
+  "rand": "rand.json",
+  "tail": "tail.json",
+  "todo": "todo.json",
+  "tree": "tree.json",
+  "wordcount": "wordcount.json"
 }
-
