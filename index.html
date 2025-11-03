@@ -1,8 +1,104 @@
 <!DOCTYPE html>
-<html>
-<head><title>Termz Mirror Package</title></head>
-<body>
-  <h1>Termz Package Mirror</h1>
-  <p>Storage for Termz shell packages.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termz (Tinkrow) Package Repository</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #E5E7EB;
+        }
+        .text-terminal {
+            font-size: 0.875rem;
+            white-space: pre-wrap;
+            line-height: 1.2;
+        }
+        .glow-text {
+            text-shadow: 0 0 8px rgba(0, 255, 128, 0.6), 0 0 15px rgba(0, 255, 128, 0.4);
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 255, 128, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 0 20px rgba(0, 255, 128, 0.5);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-5xl bg-gray-900/80 backdrop-blur-md rounded-2xl p-8 md:p-16 border border-green-600/30 shadow-2xl">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-7xl font-extrabold mb-3 text-white tracking-tight">
+                <span class="glow-text text-green-400">Termz</span> Repository
+            </h1>
+            <p class="text-2xl text-gray-400">The Core of Your Sandbox Shell</p>
+        </header>
+
+        <main class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="bg-gray-950 p-6 rounded-xl border border-green-700/50 shadow-inner shadow-green-900/20">
+                <div class="flex space-x-2 mb-3">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
+                <pre class="text-terminal text-green-300">
+Termz ~/home > pkg update
+🔄 Updating package list from repo...
+✅ Repository updated. 50 packages available.
+
+Termz ~/home > pkg install rps
+--- Package Details ---
+Name    : rps
+Version : 1.0.0
+Desc    : Rock, Paper, Scissors game
+...
+Continue installation? [Y/n] Y
+✅ Successfully installed 'rps' v1.0.0!
+
+Termz ~/home > rps
+🔹 Running rps default...
+Choose (rock, paper, scissors): paper
+You: paper | Computer: rock
+[INFO] You Win!
+                </pre>
+            </div>
+            
+            <div class="space-y-8">
+                <h2 class="text-4xl font-bold text-white leading-tight">Functional Packages for Your Termz Environment</h2>
+                <p class="text-gray-400 text-lg">
+                    This repository hosts essential, community-driven packages for Termz. Expand your sandbox capabilities with powerful utilities, fun games, and development tools—all installable with a single command.
+                </p>
+                
+                <ul class="list-disc list-inside text-gray-300 space-y-3 pl-4">
+                    <li><strong class="text-green-400">Minimal Footprint:</strong> Pure Python commands for fast execution.</li>
+                    <li><strong class="text-green-400">Dependency Support:</strong> Smart management handles package dependencies automatically.</li>
+                    <li><strong class="text-green-400">Instant Access:</strong> No complex compilation, just `pkg install`.</li>
+                </ul>
+                
+                <a href="/packages/" class="inline-block">
+                    <button class="btn-primary px-10 py-4 bg-green-500 hover:bg-green-600 text-gray-900 font-extrabold rounded-xl text-xl focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-70">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        Browse Packages
+                    </button>
+                </a>
+            </div>
+
+        </main>
+
+        <footer class="mt-16 pt-8 border-t border-green-700/50 text-center text-sm text-gray-600">
+            Powered by the Termz Community. Built with Python.
+        </footer>
+    </div>
+
 </body>
 </html>
