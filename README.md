@@ -9,5 +9,6 @@
                                                        
 </pre>
 
-**Secondary repository package of Termz**
+**Termz's package repository**
+<br>
 Powered By [Tinkrow Foundation](https://tinkrow.space)
