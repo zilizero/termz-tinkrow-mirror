@@ -1,0 +1,7 @@
+{
+    "name": "dict",
+    "version": "1.0.0",
+    "desc": "Cari definisi kata (Bahasa Inggris). Butuh 'requests'.",
+    "author": "Termz",
+    "command": "import requests\\ntry:\\n    word = input('Kata (EN): ')\\n    if not word:\\n        print('Tidak ada kata.')\\n        exit()\\n    r = requests.get(f'[https://api.dictionaryapi.dev/api/v2/entries/en/](https://api.dictionaryapi.dev/api/v2/entries/en/){word}')\\n    if r.status_code != 200:\\n        print(f\"Kata '{word}' tidak ditemukan.\")\\n        exit()\\n\\n    data = r.json()[0]\\n    print(f\"--- Definisi: {data['word']} ({data['phonetic']}) ---\")\\n    for meaning in data['meanings']:\\n        print(f\"\\n({meaning['partOfSpeech']}):\")\\n        for i, definition in enumerate(meaning['definitions'][:3]):\\n            print(f\"  {i+1}. {definition['definition']}\")\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+}

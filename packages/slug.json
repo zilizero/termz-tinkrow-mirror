@@ -1,0 +1,7 @@
+{
+    "name": "slug",
+    "version": "1.0.0",
+    "desc": "Buat string 'slug' yang ramah URL dari teks.",
+    "author": "Termz",
+    "command": "import re\\ntry:\\n    text = input('Teks judul: ')\\n    text = text.lower().strip()\\n    text = re.sub(r'[^a-z0-9\\s-]', '', text)\\n    text = re.sub(r'[\\s_]+', '-', text)\\n    text = re.sub(r'-+', '-', text)\\n    print(f'Slug: {text}')\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+}

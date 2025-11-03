@@ -1,0 +1,7 @@
+{
+    "name": "qr",
+    "version": "1.0.0",
+    "desc": "Buat link URL gambar QR code dari teks.",
+    "author": "Termz",
+    "command": "import urllib.parse\\ntry:\\n    text = input('Teks untuk QR Code: ')\\n    if not text:\\n        print('Teks tidak boleh kosong.')\\n        exit()\\n    encoded_text = urllib.parse.quote(text)\\n    url = f'[https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=){encoded_text}'\\n    print('Buka URL ini di browser untuk melihat QR Code:')\\n    print(url)\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+}

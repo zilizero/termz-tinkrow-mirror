@@ -1,0 +1,7 @@
+{
+    "name": "portscan",
+    "version": "1.0.0",
+    "desc": "Scan port TCP di host (sederhana).",
+    "author": "Termz",
+    "command": "import socket\\ntry:\\n    host = input('Host (cth: localhost atau google.com): ') or 'localhost'\\n    ports_str = input('Port (cth: 80, 443, 8080): ') or '80,443'\\n    ports = [int(p.strip()) for p in ports_str.split(',') if p.strip()]\\n\\n    print(f'Scanning {host}...')\\n    for port in ports:\\n        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\\n        s.settimeout(0.5)\\n        result = s.connect_ex((host, port))\\n        if result == 0:\\n            print(f'  Port {port}: Terbuka')\\n        else:\\n            print(f'  Port {port}: Tertutup')\\n        s.close()\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+}

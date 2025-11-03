@@ -1,0 +1,7 @@
+{
+    "name": "8ball",
+    "version": "1.0.0",
+    "desc": "Tanya Magic 8-Ball sebuah pertanyaan.",
+    "author": "Termz",
+    "command": "import random\\n\\nanswers = [\\n    'Sudah pasti.', 'Tanpa ragu.', 'Ya, tentu saja.', 'Sebaiknya kamu percaya.', 'Seperti yang saya lihat, ya.',\\n    'Kemungkinan besar.', 'Prospek bagus.', 'Ya.', 'Tanda-tanda menunjuk ke ya.',\\n    'Tanya lagi nanti.', 'Lebih baik tidak memberitahumu sekarang.', 'Tidak dapat diprediksi saat ini.', 'Konsentrasi dan tanya lagi.',\\n    'Jangan berharap.', 'Jawaban saya tidak.', 'Sumber saya bilang tidak.', 'Prospek tidak begitu bagus.', 'Sangat diragukan.'\\n]\\n\\ntry:\\n    question = input('Tanyakan sesuatu (Y/N question): ')\\n    if not question:\\n        print('Kamu harus bertanya sesuatu!')\\n    else:\\n        print(f'\\nMenjawab pertanyaan: \"{question}\"\\n')\\n        print('Magic 8-Ball berkata:')\\n        print(f'>> {random.choice(answers)} <<')\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+}

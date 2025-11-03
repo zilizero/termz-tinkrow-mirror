@@ -1,0 +1,7 @@
+{
+    "name": "stat",
+    "version": "1.0.0",
+    "desc": "Tampilkan info detail file (size, modified, etc).",
+    "author": "Termz",
+    "command": "import os\\nimport datetime\\ntry:\\n    filename = input('Nama file: ')\\n    if not os.path.exists(filename):\\n        print(f\"Error: File '{filename}' tidak ditemukan.\")\\n        exit()\\n\\n    stats = os.stat(filename)\\n    print(f'--- Info File: {filename} ---')\\n    print(f'Ukuran: {stats.st_size} bytes')\\n    print(f'Mode: {oct(stats.st_mode)[-3:]}')\\n    print(f'Device: {stats.st_dev}')\\n    print(f'User ID: {stats.st_uid}')\\n    print(f'Group ID: {stats.st_gid}')\\n    print(f\"Modifikasi Terakhir: {datetime.datetime.fromtimestamp(stats.st_mtime)}\")\\n    print(f\"Dibuat: {datetime.datetime.fromtimestamp(stats.st_ctime)}\")\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+}

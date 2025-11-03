@@ -1,0 +1,11 @@
+{
+  "name": "reverse",
+  "version": "1.0.0",
+  "desc": "Balikkan urutan teks atau kata.",
+  "author": "Termz",
+  "commands": {
+    "default": "print('Gunakan: reverse [text|words]')",
+    "text": "try:\\n    text = input('Teks: ')\\n    print(f'Hasil: {text[::-1]}')\\nexcept Exception as e:\\n    print(f'Error: {e}')",
+    "words": "try:\\n    text = input('Teks: ')\\n    words = text.split()\\n    print(f'Hasil: {' '.join(words[::-1])}')\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+  }
+}

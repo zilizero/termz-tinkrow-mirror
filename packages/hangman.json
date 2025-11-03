@@ -1,0 +1,7 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "desc": "Mainkan game Hangman klasik di terminal.",
+  "author": "Termz",
+  "command": "import random\\n\\nwords = ['python', 'termz', 'sandbox', 'github', 'package', 'terminal', 'linux', 'indonesia']\\nword = random.choice(words)\\nguessed = ['_'] * len(word)\\nerrors = 6\\nletters_guessed = []\\n\\nprint('Selamat datang di Hangman!')\\n\\ntry:\\n    while errors > 0 and '_' in guessed:\\n        print(f\"\\n{' '.join(guessed)}\")\\n        print(f\"Sisa tebakan: {errors} | Huruf ditebak: {', '.join(letters_guessed)}\")\\n        guess = input('Tebak 1 huruf: ').lower()\\n\\n        if len(guess) != 1 or not guess.isalpha():\\n            print('Input tidak valid.')\\n            continue\\n\\n        if guess in letters_guessed:\\n            print('Kamu sudah menebak huruf itu.')\\n            continue\\n\\n        letters_guessed.append(guess)\\n\\n        if guess in word:\\n            print('Benar!')\\n            for i, letter in enumerate(word):\\n                if letter == guess:\\n                    guessed[i] = guess\\n        else:\\n            print('Salah!')\\n            errors -= 1\\n\\n    if '_' not in guessed:\\n        print(f\"\\nSelamat! Kamu menebak katanya: {word}\")\\n    else:\\n        print(f\"\\nGame Over! Katanya adalah: {word}\")\\nexcept KeyboardInterrupt:\\n    print('\\nGame dihentikan.')"
+}

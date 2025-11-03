@@ -1,0 +1,7 @@
+{
+    "name": "ip",
+    "version": "1.0.0",
+    "desc": "Cek info IP publik kamu. Butuh 'requests'.",
+    "author": "Termz",
+    "command": "import requests\\ntry:\\n    print('Mencari info IP publik...')\\n    r = requests.get('[https://ipinfo.io/json](https://ipinfo.io/json)')\\n    if r.status_code != 200:\\n        print('Gagal mengambil data.')\\n        exit()\\n    data = r.json()\\n    print(f\"IP: {data.get('ip')}\")\\n    print(f\"Hostname: {data.get('hostname')}\")\\n    print(f\"Kota: {data.get('city')}\")\\n    print(f\"Region: {data.get('region')}\")\\n    print(f\"Negara: {data.get('country')}\")\\n    print(f\"ISP: {data.get('org')}\")\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+}

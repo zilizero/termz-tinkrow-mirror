@@ -1,0 +1,7 @@
+{
+    "name": "matrix",
+    "version": "1.0.0",
+    "desc": "Simulasi 'Digital Rain' ala Matrix. (Ctrl+C untuk stop)",
+    "author": "Termz",
+    "command": "import random\\nimport time\\n\\nchars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()[]'\\nprint('Memasuki Matrix... (Ctrl+C untuk keluar)')\\ntime.sleep(1)\\ntry:\\n    while True:\\n        line = ''.join(random.choice(chars + ' ' * 10) for _ in range(70))\\n        print(f'\\033[1;32m{line}\\033[0m')\\n        time.sleep(0.05)\\nexcept KeyboardInterrupt:\\n    print('\\nKeluar dari Matrix.')"
+}
