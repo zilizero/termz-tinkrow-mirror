@@ -1,0 +1,7 @@
+{
+  "name": "tail",
+  "version": "1.0.0",
+  "desc": "Tampilkan N baris terakhir dari sebuah file.",
+  "author": "Termz",
+  "command": "import os\\ntry:\\n    filename = input(\"File: \")\\n    n_lines = int(input(\"Jumlah baris (default 10): \") or 10)\\n    if not os.path.exists(filename):\\n        print(f\"Error: File '{filename}' tidak ditemukan.\")\\n        exit()\\n    with open(filename, 'r') as f:\\n        lines = f.readlines()\\n        for line in lines[-n_lines:]:\\n            print(line.strip())\\nexcept Exception as e:\\n    print(f\"Error: {e}\")"
+}

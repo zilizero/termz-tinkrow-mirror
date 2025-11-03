@@ -1,0 +1,11 @@
+{
+  "name": "http",
+  "version": "1.0.0",
+  "desc": "Buat HTTP GET/POST request (butuh 'requests').",
+  "author": "Termz",
+  "commands": {
+    "default": "print(\"Gunakan: http [get|post]\")",
+    "get": "import requests\\ntry:\\n    url = input('URL (http://...): ')\\n    r = requests.get(url)\\n    print(f'Status: {r.status_code}')\\n    print('--- Response (max 250 char) ---')\\n    print(r.text[:250] + '...')\\nexcept Exception as e:\\n    print(f'Error: {e}')",
+    "post": "import requests\\nimport json\\ntry:\\n    url = input('URL (http://...): ')\\n    data_str = input('JSON Data (e.g., {{\"key\":\"val\"}}): ') or '{}'\\n    data = json.loads(data_str)\\n    r = requests.post(url, json=data)\\n    print(f'Status: {r.status_code}')\\n    print('--- Response (max 250 char) ---')\\n    print(r.text[:250] + '...')\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+  }
+}

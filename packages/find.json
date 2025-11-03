@@ -1,0 +1,7 @@
+{
+  "name": "find",
+  "version": "1.0.0",
+  "desc": "Cari file berdasarkan nama di direktori saat ini.",
+  "author": "Termz",
+  "command": "import os\\ntry:\\n    filename = input(\"Nama file (bisa partial): \")\\n    print(f\"Mencari '{filename}' di . ...\")\\n    count = 0\\n    for root, dirs, files in os.walk('.'):\\n        for name in files + dirs:\\n            if filename in name:\\n                print(os.path.join(root, name))\\n                count += 1\\n    print(f\"\\nDitemukan {count} hasil.\")\\nexcept Exception as e:\\n    print(f\"Error: {e}\")"
+}

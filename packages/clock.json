@@ -1,0 +1,7 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "desc": "Tampilkan tanggal dan waktu saat ini.",
+  "author": "Termz",
+  "command": "import datetime\\nnow = datetime.datetime.now()\\nprint(f\"Waktu Saat Ini: {now.strftime('%A, %d %B %Y - %H:%M:%S')}\")"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "joke",
+  "version": "1.0.0",
+  "desc": "Tampilkan lelucon acak (butuh 'requests').",
+  "author": "Termz",
+  "command": "import requests\\ntry:\\n    url = '[https://official-joke-api.appspot.com/random_joke](https://official-joke-api.appspot.com/random_joke)'\\n    r = requests.get(url).json()\\n    print(f\"Q: {r['setup']}\")\\n    input(\"(Tekan Enter untuk jawaban...)\")\\n    print(f\"A: {r['punchline']}\")\\nexcept Exception as e:\\n    print(f'Error: {e}')"
+}

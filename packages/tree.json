@@ -1,0 +1,7 @@
+{
+  "name": "tree",
+  "version": "1.0.0",
+  "desc": "Tampilkan struktur direktori (sederhana).",
+  "author": "Termz",
+  "command": "import os\\n\\ndef list_files(startpath):\\n    for root, dirs, files in os.walk(startpath, topdown=True):\\n        level = root.replace(startpath, '').count(os.sep)\\n        indent = '│   ' * (level)\\n        print(f'{indent}├── {os.path.basename(root)}/')\\n        sub_indent = '│   ' * (level + 1)\\n        for f in files:\\n            print(f'{sub_indent}├── {f}')\\n\\nprint(\".\")\\nlist_files('.')\\n\\nlist_files('.')"
+}

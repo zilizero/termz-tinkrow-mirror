@@ -1,0 +1,7 @@
+{
+  "name": "wordcount",
+  "version": "1.0.0",
+  "desc": "Hitung baris, kata, dan karakter dari input.",
+  "author": "Termz",
+  "command": "print(\"Masukkan teks (Ctrl+D untuk selesai):\")\\ntext = ''\\ntry:\\n    while True:\\n        line = input()\\n        text += line + '\\n'\\nexcept EOFError:\\n    pass\\n\\nlines = len(text.splitlines())\\nwords = len(text.split())\\nchars = len(text)\\nprint(\"--- Statistik ---\")\\nprint(f\"Baris: {lines}\")\\nprint(f\"Kata: {words}\")\\nprint(f\"Karakter: {chars}\")"
+}

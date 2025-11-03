@@ -1,0 +1,11 @@
+{
+  "name": "rand",
+  "version": "1.0.0",
+  "desc": "Hasilkan angka acak atau password.",
+  "author": "Termz",
+  "commands": {
+    "default": "print(\"Gunakan: rand [num|pw]\")",
+    "num": "import random\\ntry:\\n    min_val = int(input(\"Nilai Min: \"))\\n    max_val = int(input(\"Nilai Max: \"))\\n    print(f\"Hasil: {random.randint(min_val, max_val)}\")\\nexcept Exception as e:\\n    print(\"Error: Masukkan angka valid.\")",
+    "pw": "import random\\nimport string\\ntry:\\n    length = int(input(\"Panjang password (min 8): \"))\\n    if length < 8: length = 8\\n    chars = string.ascii_letters + string.digits + string.punctuation\\n    password = ''.join(random.choice(chars) for i in range(length))\\n    print(f\"Password: {password}\")\\nexcept Exception as e:\\n    print(\"Error: Masukkan angka valid.\")"
+  }
+}

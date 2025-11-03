@@ -1,0 +1,7 @@
+{
+  "name": "head",
+  "version": "1.0.0",
+  "desc": "Tampilkan N baris pertama dari sebuah file.",
+  "author": "Termz",
+  "command": "import os\\ntry:\\n    filename = input(\"File: \")\\n    n_lines = int(input(\"Jumlah baris (default 10): \") or 10)\\n    if not os.path.exists(filename):\\n        print(f\"Error: File '{filename}' tidak ditemukan.\")\\n        exit()\\n    with open(filename, 'r') as f:\\n        for i in range(n_lines):\\n            line = f.readline()\\n            if not line:\\n                break\\n            print(line.strip())\\nexcept Exception as e:\\n    print(f\"Error: {e}\")"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "desc": "Todo list simpel. Disimpan di .todo.json",
+  "author": "Termz",
+  "commands": {
+    "default": "print('Gunakan: todo [list|add|done|clear]')",
+    "list": "import json\\nimport os\\nF = '.todo.json'\\nif not os.path.exists(F):\\n    print('Todo list kosong.')\\n    exit()\\ntry:\\n    with open(F, 'r') as f:\\n        todos = json.load(f)\\n    if not todos:\\n        print('Todo list kosong.')\\n    else:\\n        print(\"--- DAFTAR TUGAS ---\")\\n        for i, todo in enumerate(todos):\\n            print(f' {i+1}. {todo}')\\nexcept Exception as e:\\n    print(f'Error: {e}')",
+    "add": "import json\\nimport os\\nF = '.todo.json'\\ntodos = []\\nif os.path.exists(F):\\n    try:\\n        with open(F, 'r') as f:\\n            todos = json.load(f)\\n    except: pass\\n\\ntask = input('Tugas baru: ')\\nif task:\\n    todos.append(task)\\n    try:\\n        with open(F, 'w') as f:\\n            json.dump(todos, f, indent=2)\\n        print(f'Tugas \"{task}\" ditambahkan.')\\n    except Exception as e:\\n        print(f'Error: {e}')",
+    "done": "import json\\nimport os\\nF = '.todo.json'\\ntodos = []\\nif not os.path.exists(F):\\n    print('Todo list kosong.')\\n    exit()\\nwith open(F, 'r') as f:\\n    todos = json.load(f)\\nif not todos:\\n    print('Todo list kosong.')\\n    exit()\\ntry:\\n    num = int(input('Nomor tugas yg selesai: '))\\n    if 1 <= num <= len(todos):\\n        task = todos.pop(num - 1)\\n        with open(F, 'w') as f:\\n            json.dump(todos, f, indent=2)\\n        print(f'Tugas \"{task}\" selesai.')\\n    else:\\n        print('Nomor tidak valid.')\\nexcept Exception as e:\\n    print('Input harus angka.')",
+    "clear": "import os\\nF = '.todo.json'\\nif os.path.exists(F):\\n    os.remove(F)\\nprint('Semua todo dihapus.')"
+  }
+}

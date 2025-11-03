@@ -1,0 +1,7 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "desc": "Kalkulator simpel (eval). Hati-hati menggunakannya.",
+  "author": "Termz",
+  "command": "import math\\ntry:\\n    expr = input(\"Masukkan ekspresi: \")\\n    allowed_chars = '0123456789+-*/(). %'\\n    if not all(c in allowed_chars or c in dir(math) for c in expr):\\n        print(\"Karakter tidak diizinkan.\")\\n    else:\\n        print(f\"Hasil: {eval(expr, {'__builtins__': {}, 'math': math}, math.__dict__)}\")\\nexcept Exception as e:\\n    print(f\"Error: {e}\")"
+}

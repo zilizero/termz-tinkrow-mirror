@@ -1,0 +1,7 @@
+{
+  "name": "grep",
+  "version": "1.0.0",
+  "desc": "Cari teks di dalam file.",
+  "author": "Termz",
+  "command": "import re\\nimport os\\ntry:\\n    pattern = input(\"Pattern: \")\\n    filename = input(\"File: \")\\n    if not os.path.exists(filename):\\n        print(f\"Error: File '{filename}' tidak ditemukan.\")\\n        exit()\\n    count = 0\\n    with open(filename, 'r') as f:\\n        for i, line in enumerate(f):\\n            if re.search(pattern, line):\\n                print(f\"{i+1}: {line.strip()}\")\\n                count += 1\\n    print(f\"\\nDitemukan {count} baris.\")\\nexcept Exception as e:\\n    print(f\"Error: {e}\")"
+}
